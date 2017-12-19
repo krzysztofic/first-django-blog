@@ -1,0 +1,239 @@
+body
+{
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("img/tlo.png");
+	margin: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 10 px;
+}
+
+#container
+{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+}
+
+.naglowek
+{
+	width: 1000px;
+	height: 60px;
+	margin-top: 10px;
+	/*border-bottom: 1px solid #808080;*/
+}
+
+.newslist
+{
+	width: 248px;
+	height: 480px;
+	background-color: white;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+	border: 1px solid #F1F1F1;
+	overflow: auto;
+}
+
+.news
+{
+	width: 748px;
+	height: 380px;
+	background-color: white;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+	border: 1px solid #F1F1F1;
+	overflow: auto;
+}
+
+.podcast
+{
+	width: 363px;
+	height: 98px;
+	background-color: white;
+	float: left;
+	text-align: center;
+	border: 1px solid #F1F1F1;
+}
+
+.tablica
+{
+	width: 383px;
+	height: 98px;
+	background-color: white;
+	float: left;
+	text-align: center;
+	border: 1px solid #F1F1F1;
+}
+
+#media
+{
+	width: 250px;
+	height: 60px;
+	float: left;
+}
+
+.szukaj
+{
+	width: 260px;
+	height: 60px;
+	float: left;
+	margin-left: 30px;
+}
+
+input[type=text]
+{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+audio 
+{
+	margin-top: 15px;
+}
+
+
+#logo
+{
+	width: 400px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	letter-spacing: 5px;
+	font-size:  40px;
+	margin-left: 40px;
+
+	
+}
+
+.email
+{
+	float: left;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.email:hover
+{
+	color: #808080;	
+}
+
+.fb
+{
+	margin-left: 10px;
+	color: #4888b3;
+	float: left;
+	cursor: pointer;
+}
+
+.fb:hover
+{
+	color: #396c8f;
+}
+
+.tr
+{
+	margin-left: 10px;
+	color:  #3095d3;
+	float: left;
+	cursor: pointer;
+}
+
+.tr:hover
+{
+	color: #2677a8;
+}
+
+.yt
+{
+	margin-left: 10px;
+	color: #d94348;
+	float: left;
+	cursor: pointer;
+}
+
+.yt:hover
+{
+	color: #ad3539;
+}
+
+
+
+#slider
+{
+    position: fixed;
+    width: 100%;
+    height: 2.2em;
+    line-height: 2.2em;
+    border-top: 1px solid #F1F1F1;
+    font-size: 1.5em;
+    background-color: #EEE;
+    overflow: hidden;
+    bottom: 0;
+}
+
+ #slider > p
+{
+        position: absolute;
+        margin: 0;
+        white-space: nowrap;
+        animation: przesun 30s linear infinite;
+        -webkit-animation: przesun 30s linear infinite; /* dla Google Chrome, Safari, Opera 15+ */
+ }
+ 
+ /* ------------ANIMACJA-PRZESUN------------ */
+      @keyframes przesun
+      {
+        0% { transform:translateX(0); padding-left:110%; }
+        100% { transform:translateX(-100%); padding-left:110%; }
+      }
+
+      @-webkit-keyframes przesun /* dla Google Chrome, Safari, Opera 15+ */
+      {
+        0% { -webkit-transform:translateX(0); padding-left:110%; }
+        100% { -webkit-transform:translateX(-100%); padding-left:110%; }
+      }
+	  
+#stopka
+{
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("img/black.png");
+	color: white;
+	width: 100%;
+	height: 130px;
+	border-top:1px solid #F1F1F1;
+}
+
+.linki
+{
+	width: 300px;
+	height: 100 px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 25px;
+	text-align: center;
+	border-right:1px solid #FFFFFF;
+	border-left:1px solid #FFFFFF;
+}
+
+.subskrybcja
+{
+	width: 300px;
+	height: 75px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 25px;
+	text-align: center;
+	background-color: #808080;
+}
+
+.donate
+{
+	width: 300px;
+	height: 75px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 25px;
+	text-align: center;
+	background-color: #808080;
+}

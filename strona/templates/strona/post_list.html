@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8" />
+<title>Szybki News Dnia!</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id ="container">
+
+	<div class = "naglowek">
+
+		<div id="media">
+			<div class="email"><i class="icon-mail"></i></div>
+			<div class="fb"><i class="icon-facebook"></i></div>
+			<div class="yt"><i class="icon-youtube"></i></div>
+			<div class="tr"><i class="icon-twitter"></i></div>
+		</div>
+
+		<div id="logo"> NEW DEV</div>
+
+		<!--Wyszukiwarka newsow-->
+		<div class ="szukaj">
+			<form action="http://www.google.pl/search" method="get">
+			<input type="text" placeholder="Szukaj notki..." onfocus="this.placeholder=' ' " onblur="this.placeholder='Szukaj notki...' " name="q" />
+			<input type="hidden" name="ie" value="iso-8859-2" />
+
+			</form>
+		</div>
+
+		<div style="clear: both;"></div>
+	</div>
+
+	<div class = "newslist">#Lista pozostalych postów</div>
+
+	{% for post in posts %}
+	<div class = "news">
+		<p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+	</div>
+	{% endfor %}
+
+	<div class = "podcast"># Podsumowanie tygodnia - posłuchaj podcast w MP3!
+
+		<audio controls>
+		<source src="audio/track.mp3" type='audio/mpeg'>
+		Pobierz plik w formacie: <a href="audio/track.mp3">MP3</a>
+		</audio>
+
+	</div>
+
+	<div class = "tablica"># Zajrzyj też tutaj!</div>
+
+	<div style="clear: both;"></div>
+
+
+	<!-- <div id ="slider"> z-index:1;
+
+		<p>
+		BREAKING NEWS!   BREAKING NEWS!   BREAKING NEWS!   BREAKING NEWS!    BREAKING NEWS!   BREAKING NEWS!
+		BREAKING NEWS!   BREAKING NEWS!   BREAKING NEWS!   BREAKING NEWS!    BREAKING NEWS!   BREAKING NEWS!
+		BREAKING NEWS!   BREAKING NEWS!   BREAKING NEWS!   BREAKING NEWS!    BREAKING NEWS!   BREAKING NEWS!
+		</p>
+
+	</div> -->
+
+	<div style="clear: both;"></div>
+
+	<div id = "stopka">
+
+
+		<div class = "subskrybcja">#Zapisz sie na newsletter</div>
+
+		<div class = "linki">
+				O mnie<br><br>
+				Skontaktuj się<br><br>
+				Regulamin<br>
+		</div>
+
+		<div class = "donate">#Widget dotacji <br><br><br><br></div>
+
+	</div>
+
+
+</div>
+</body>
+
+</html>
