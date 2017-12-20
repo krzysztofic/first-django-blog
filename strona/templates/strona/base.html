@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html lang="pl">
+
+<head>
+<meta charset="utf-8" />
+<title>New Developer blog</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+
+<!-- include bootstrap
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+-->
+
+<!-- my own css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type='text/css'/>
+<link rel="stylesheet" href="{% static 'css/css/fontello.css' %}" type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id ="container">
+
+	<div class = "header">
+
+		<div id="media">
+			<div class="email"><i class="icon-mail"></i></div>
+			<div class="fb"><i class="icon-facebook"></i></div>
+			<div class="yt"><i class="icon-youtube"></i></div>
+			<div class="tr"><i class="icon-twitter"></i></div>
+		</div>
+
+		<div id="logo">NEW DEV</div>
+
+		<!--Wyszukiwarka postów-->
+		<div class ="szukaj">
+			<form action="http://www.google.pl/search" method="get">
+			<input type="text" placeholder="Szukaj notki..." onfocus="this.placeholder=' ' " onblur="this.placeholder='Szukaj notki...' " name="q" />
+			<input type="hidden" name="ie" value="iso-8859-2" />
+
+			</form>
+		</div>
+
+		<div style="clear: both;"></div>
+	</div>
+
+	<div class = "newslist">#Lista pozostalych postów</div>
+
+
+	<div class = "news">
+		{% block content %}
+    {% endblock %}
+	</div>
+
+
+	<div class = "podcast"># Podsumowanie tygodnia - posłuchaj podcast w MP3!
+
+		<audio controls>
+		<source src="audio/track.mp3" type='audio/mpeg'>
+		Pobierz plik w formacie: <a href="audio/track.mp3">MP3</a>
+		</audio>
+
+	</div>
+
+	<div class = "tablica">
+	<!--  Twitter widget
+		<blockquote class="twitter-tweet"><p lang="en" dir="ltr">
+			<a href="https://twitter.com/Vermintyn">@Vermintyn</a>
+			<a href="https://twitter.com/Vermintyn/status/943208802249269250"></a>
+		</blockquote>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+-->
+</div>
+
+	<div style="clear: both;"></div>
+
+	<div id = "stopka">
+
+		<div class = "subskrybcja">#Zapisz sie na newsletter</div>
+
+		<div class = "linki">
+				O mnie<br><br>
+				Skontaktuj się<br><br>
+				Regulamin<br>
+		</div>
+
+		<div class = "donate">#Widget dotacji <br><br><br><br></div>
+
+	</div>
+
+
+</div>
+</body>
+
+</html>

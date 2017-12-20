@@ -14,7 +14,7 @@ body
 	margin: auto;
 }
 
-.naglowek
+.header
 {
 	width: 1000px;
 	height: 60px;
@@ -25,7 +25,7 @@ body
 .newslist
 {
 	width: 248px;
-	height: 480px;
+	height: 570px;
 	background-color: white;
 	float: left;
 	text-align: center;
@@ -34,13 +34,12 @@ body
 	overflow: auto;
 }
 
-.news
+.main_content
 {
 	width: 748px;
 	height: 380px;
 	background-color: white;
 	float: left;
-	text-align: center;
 	margin-top: 10px;
 	border: 1px solid #F1F1F1;
 	overflow: auto;
@@ -49,7 +48,7 @@ body
 .podcast
 {
 	width: 363px;
-	height: 98px;
+	height: 188px;
 	background-color: white;
 	float: left;
 	text-align: center;
@@ -59,7 +58,7 @@ body
 .tablica
 {
 	width: 383px;
-	height: 98px;
+	height: 188px;
 	background-color: white;
 	float: left;
 	text-align: center;
@@ -87,7 +86,7 @@ input[type=text]
 	margin-left: 20px;
 }
 
-audio 
+audio
 {
 	margin-top: 15px;
 }
@@ -103,7 +102,7 @@ audio
 	font-size:  40px;
 	margin-left: 40px;
 
-	
+
 }
 
 .email
@@ -115,7 +114,7 @@ audio
 
 .email:hover
 {
-	color: #808080;	
+	color: #808080;
 }
 
 .fb
@@ -180,7 +179,7 @@ audio
         animation: przesun 30s linear infinite;
         -webkit-animation: przesun 30s linear infinite; /* dla Google Chrome, Safari, Opera 15+ */
  }
- 
+
  /* ------------ANIMACJA-PRZESUN------------ */
       @keyframes przesun
       {
@@ -193,7 +192,7 @@ audio
         0% { -webkit-transform:translateX(0); padding-left:110%; }
         100% { -webkit-transform:translateX(-100%); padding-left:110%; }
       }
-	  
+
 #stopka
 {
 	/* Background pattern from subtlepatterns.com */
