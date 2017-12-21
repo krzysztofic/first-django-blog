@@ -8,11 +8,13 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+<meta property="og:image" content="" />
+<link rel='shortcut icon' href='' />  <!--.ico-->
 
-<!-- include bootstrap
+<!-- include bootstrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
--->
+
 
 <!-- my own css -->
 <link rel="stylesheet" href="{% static 'css/style.css' %}" type='text/css'/>
@@ -22,50 +24,51 @@
 
 <body>
 
-<div id ="container">
+<div class="container">
+	<div class="row">
+		<div class="header col-12">
+			<div class="media col-3">
+				<div class="row">
+					<div class="email col-0,5"><i class="icon-mail"></i></div>
+					<div class="fb col-0,5"><i class="icon-facebook"></i></div>
+					<div class="yt col-0,5"><i class="icon-youtube"></i></div>
+					<div class="tr col-0,5"><i class="icon-twitter"></i></div>
+					<div class="li col-0,5"><i class="icon-linkedin-squared"></i></div>
+					<div class="gh col-0,5"><i class="icon-github-circled-alt2"></i></div>
+				</div>
+			</div>
 
-	<div class = "header">
+			<div class="logo col-5">NEW DEV</div>
 
-		<div id="media">
-			<div class="email"><i class="icon-mail"></i></div>
-			<div class="fb"><i class="icon-facebook"></i></div>
-			<div class="yt"><i class="icon-youtube"></i></div>
-			<div class="tr"><i class="icon-twitter"></i></div>
+			<!--Wyszukiwarka postów-->
+			<div class="szukaj col-3">
+				<form action="http://www.google.pl/search" method="get">
+				<input type="text" placeholder="Szukaj notki..." onfocus="this.placeholder=' ' " onblur="this.placeholder='Szukaj notki...' " name="q" />
+				<input type="hidden" name="ie" value="iso-8859-2" />
+				</form>
+			</div>
+
+			<div style="clear: both;"></div>
 		</div>
-
-		<div id="logo">NEW DEV</div>
-
-		<!--Wyszukiwarka postów-->
-		<div class ="szukaj">
-			<form action="http://www.google.pl/search" method="get">
-			<input type="text" placeholder="Szukaj notki..." onfocus="this.placeholder=' ' " onblur="this.placeholder='Szukaj notki...' " name="q" />
-			<input type="hidden" name="ie" value="iso-8859-2" />
-
-			</form>
-		</div>
-
-		<div style="clear: both;"></div>
 	</div>
 
-	<div class = "newslist">#Lista pozostalych postów</div>
+	<div class = "newslist col-3">#Lista pozostalych postów</div>
 
-
-	<div class = "news">
+	<div class="main col-9">
 		{% block content %}
-    {% endblock %}
+		{% endblock %}
 	</div>
 
+		<div class = "table1 col-3"># Podsumowanie tygodnia - posłuchaj podcast w MP3!
 
-	<div class = "podcast"># Podsumowanie tygodnia - posłuchaj podcast w MP3!
+			<!--<audio controls>
+			<source src="audio/track.mp3" type='audio/mpeg'>
+			Pobierz plik w formacie: <a href="audio/track.mp3">MP3</a>
+			</audio>
+		-->
+		</div>
 
-		<audio controls>
-		<source src="audio/track.mp3" type='audio/mpeg'>
-		Pobierz plik w formacie: <a href="audio/track.mp3">MP3</a>
-		</audio>
-
-	</div>
-
-	<div class = "tablica">
+		<div class = "table2 col-3"> #kontener
 	<!--  Twitter widget
 		<blockquote class="twitter-tweet"><p lang="en" dir="ltr">
 			<a href="https://twitter.com/Vermintyn">@Vermintyn</a>
@@ -73,21 +76,23 @@
 		</blockquote>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 -->
-</div>
+		</div>
+
+	<div class = "table2 col-3"> #kontener</div>
 
 	<div style="clear: both;"></div>
 
-	<div id = "stopka">
+	<div class= "footer col-12">
 
-		<div class = "subskrybcja">#Zapisz sie na newsletter</div>
+		<div class = "subscribe col-4">#Zapisz sie na newsletter</div>
 
-		<div class = "linki">
+		<div class = "links col-3">
 				O mnie<br><br>
 				Skontaktuj się<br><br>
 				Regulamin<br>
 		</div>
 
-		<div class = "donate">#Widget dotacji <br><br><br><br></div>
+		<div class = "donate col-4">#Widget dotacji <br><br><br><br></div>
 
 	</div>
 

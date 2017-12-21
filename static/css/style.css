@@ -7,28 +7,35 @@ body
 	font-size: 10 px;
 }
 
-#container
+.container
 {
-	width: 1000px;
+	width: 100%;
 	height: 100%;
 	margin: auto;
 }
 
 .header
 {
-	width: 1000px;
 	height: 60px;
 	margin-top: 10px;
-	/*border-bottom: 1px solid #808080;*/
 }
 
 .newslist
 {
-	width: 248px;
-	height: 570px;
+	height: 550px;
 	background-color: white;
 	float: left;
 	text-align: center;
+	margin-top: 10px;
+	border: 1px solid #F1F1F1;
+	overflow: auto;
+}
+
+.main
+{
+	height: 400px;
+	background-color: white;
+	float: left;
 	margin-top: 10px;
 	border: 1px solid #F1F1F1;
 	overflow: auto;
@@ -36,45 +43,44 @@ body
 
 .main_content
 {
-	width: 748px;
-	height: 380px;
+	height: 400px;
 	background-color: white;
 	float: left;
 	margin-top: 10px;
 	border: 1px solid #F1F1F1;
 	overflow: auto;
+	border: none;
 }
 
-.podcast
+.table1
 {
-	width: 363px;
-	height: 188px;
+	height: 150px;
 	background-color: white;
 	float: left;
 	text-align: center;
 	border: 1px solid #F1F1F1;
 }
 
-.tablica
+.table2
 {
-	width: 383px;
-	height: 188px;
+	height: 150px;
 	background-color: white;
 	float: left;
 	text-align: center;
 	border: 1px solid #F1F1F1;
 }
 
-#media
+.table3
 {
-	width: 250px;
-	height: 60px;
+	height: 150px;
+	background-color: white;
 	float: left;
+	text-align: center;
+	border: 1px solid #F1F1F1;
 }
 
 .szukaj
 {
-	width: 260px;
 	height: 60px;
 	float: left;
 	margin-left: 30px;
@@ -82,34 +88,38 @@ body
 
 input[type=text]
 {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: 20px;
 }
 
-audio
+.audio
 {
 	margin-top: 15px;
 }
 
 
-#logo
+.logo
 {
-	width: 400px;
 	height: 60px;
 	float: left;
 	text-align: center;
 	letter-spacing: 5px;
 	font-size:  40px;
 	margin-left: 40px;
+}
 
-
+.media
+{
+	height: 60px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 .email
 {
-	float: left;
-	margin-left: 15px;
 	cursor: pointer;
+	font-size: 30px;
 }
 
 .email:hover
@@ -119,10 +129,9 @@ audio
 
 .fb
 {
-	margin-left: 10px;
 	color: #4888b3;
-	float: left;
 	cursor: pointer;
+	font-size: 30px;
 }
 
 .fb:hover
@@ -132,10 +141,9 @@ audio
 
 .tr
 {
-	margin-left: 10px;
 	color:  #3095d3;
-	float: left;
 	cursor: pointer;
+	font-size: 30px;
 }
 
 .tr:hover
@@ -145,10 +153,9 @@ audio
 
 .yt
 {
-	margin-left: 10px;
 	color: #d94348;
-	float: left;
 	cursor: pointer;
+	font-size: 30px;
 }
 
 .yt:hover
@@ -156,6 +163,29 @@ audio
 	color: #ad3539;
 }
 
+.li
+{
+	color: #4888b3;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.li:hover
+{
+	color: #396c8f;
+}
+
+.gh
+{
+	color: #000;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.gh:hover
+{
+	color: #808080;
+}
 
 
 #slider
@@ -193,34 +223,32 @@ audio
         100% { -webkit-transform:translateX(-100%); padding-left:110%; }
       }
 
-#stopka
+.footer
 {
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/black.png");
 	color: white;
-	width: 100%;
-	height: 130px;
+	height: 150px;
 	border-top:1px solid #F1F1F1;
 }
 
-.linki
+.links
 {
-	width: 300px;
-	height: 100 px;
+	height: 125px;
 	float: left;
 	margin-top: 25px;
+	padding-bottom: 25px;
 	margin-left: 25px;
 	text-align: center;
 	border-right:1px solid #FFFFFF;
 	border-left:1px solid #FFFFFF;
 }
 
-.subskrybcja
+.subscribe
 {
-	width: 300px;
-	height: 75px;
+	height: 80px;
 	float: left;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-left: 25px;
 	text-align: center;
 	background-color: #808080;
@@ -228,10 +256,9 @@ audio
 
 .donate
 {
-	width: 300px;
-	height: 75px;
+	height: 80px;
 	float: left;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-left: 25px;
 	text-align: center;
 	background-color: #808080;
