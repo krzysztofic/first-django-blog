@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 {% load staticfiles %}
+{% load i18n %}
 <html lang="pl">
 
 <head>
 <meta charset="utf-8" />
-<title>New Developer blog</title>
+<title>DEV Note blog</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
@@ -20,84 +21,70 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}" type='text/css'/>
 <link rel="stylesheet" href="{% static 'css/css/fontello.css' %}" type='text/css'/>
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
 		<div class="header col-12">
-			<div class="media col-3">
-				<div class="row">
-					<div class="email col-0,5"><i class="icon-mail"></i></div>
-					<div class="fb col-0,5"><i class="icon-facebook"></i></div>
-					<div class="yt col-0,5"><i class="icon-youtube"></i></div>
-					<div class="tr col-0,5"><i class="icon-twitter"></i></div>
-					<div class="li col-0,5"><i class="icon-linkedin-squared"></i></div>
-					<div class="gh col-0,5"><i class="icon-github-circled-alt2"></i></div>
+			<div class="row">
+				<div class="media mt-2 col-3">
+					<div class="row">
+						<ul class="media ml-5">
+							<li class="email"><a href="email:"><i class="icon-mail"></i></li>
+							<!--<li class="fb"><i class="icon-facebook"></i></li>
+							<li class="yt"><i class="icon-youtube"></i></li>
+							<li class="li"><i class="icon-linkedin-squared"></i></li>  soon-->
+							<li class="tr"><a href="http://twitter.com/Vermityn"><i class="icon-twitter"></i></li>
+							<li class="gh"><a href="http://github.com/Vermintyn"><i class="icon-github-circled-alt2"></i></a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
 
-			<div class="logo col-5">NEW DEV</div>
+				<div class="logo ml-5 col-8">
+					<h3>DEV NOTE</h3>
+					<h6>...czyli notatki przyszłego programisty</h6>
+				</div>
 
-			<!--Wyszukiwarka postów-->
+			<!--Wyszukiwarka postów
 			<div class="szukaj col-3">
 				<form action="http://www.google.pl/search" method="get">
-				<input type="text" placeholder="Szukaj notki..." onfocus="this.placeholder=' ' " onblur="this.placeholder='Szukaj notki...' " name="q" />
-				<input type="hidden" name="ie" value="iso-8859-2" />
+					<input type="text" placeholder="Szukaj notki..." onfocus="this.placeholder=' ' " onblur="this.placeholder='Szukaj notki...' " name="q" />
+					<input type="hidden" name="ie" value="iso-8859-2" />
 				</form>
 			</div>
-
-			<div style="clear: both;"></div>
+			-->
+			</div>
 		</div>
 	</div>
 
-	<div class = "newslist col-3">#Lista pozostalych postów</div>
+		<div class="row mt-3">
+			<div class="sidebar-articles ml-5 col-3">
+				<section class="top-articles">
+					<h4>Top Articles</h4>
+				</section>
 
-	<div class="main col-9">
-		{% block content %}
-		{% endblock %}
-	</div>
+				<section class="archive-articles">
+					<h4>Archive</h4>
+				</section>
+			</div>
 
-		<div class = "table1 col-3"># Podsumowanie tygodnia - posłuchaj podcast w MP3!
-
-			<!--<audio controls>
-			<source src="audio/track.mp3" type='audio/mpeg'>
-			Pobierz plik w formacie: <a href="audio/track.mp3">MP3</a>
-			</audio>
-		-->
+			<div class="main ml-5 col-sm-7">
+				{% block content %}
+				{% endblock %}
+			</div>
 		</div>
 
-		<div class = "table2 col-3"> #kontener
-	<!--  Twitter widget
-		<blockquote class="twitter-tweet"><p lang="en" dir="ltr">
-			<a href="https://twitter.com/Vermintyn">@Vermintyn</a>
-			<a href="https://twitter.com/Vermintyn/status/943208802249269250"></a>
-		</blockquote>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
--->
-		</div>
+</div>
 
-	<div class = "table2 col-3"> #kontener</div>
-
-	<div style="clear: both;"></div>
-
-	<div class= "footer col-12">
-
-		<div class = "subscribe col-4">#Zapisz sie na newsletter</div>
-
-		<div class = "links col-3">
+	<div class="footer mt-3">
+		<div class="links mx-auto col-4">
 				O mnie<br><br>
 				Skontaktuj się<br><br>
 				Regulamin<br>
 		</div>
-
-		<div class = "donate col-4">#Widget dotacji <br><br><br><br></div>
-
 	</div>
-
-
-</div>
 </body>
-
 </html>
