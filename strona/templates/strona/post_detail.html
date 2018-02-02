@@ -1,0 +1,34 @@
+{% extends 'strona/base.html' %}
+{% load staticfiles %}
+{% load disqus_tags %}
+{% load i18n %}
+
+{% block title %} {{ post.title }} {% endblock %}
+
+{% block content %}
+
+<div class = "main_content col-12">
+  <h3>{{ post.title }}</h3>
+  <p>Napisałem: {{ post.created_date }}</p>
+  <p><b> {{ post.lead }}</b></p>
+  <p>{{ post.text|linebreaksbr }}</p>
+
+  <div class="row links-next-prev">
+      <div class="col-sm-6 link-previous">
+      {% if previous_post %}
+        {% trans "Poprzedni post" %}<br>
+          <a href="{{ previous_post.get_absolute_url }}">{{ previous_post }}</a>
+      {% endif %}
+      </div>
+      <div class="col-sm-6 link-next">
+      {% if next_post %}
+        {% trans "Kolejny post" %}<br>
+          <a href="{{ next_post.get_absolute_url }}">{{ next_post }}</a>
+      {% endif %}
+      </div>
+  </div>
+</div>
+
+{% disqus_show_comments %}
+
+{% endblock %}

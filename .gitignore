@@ -1,5 +1,6 @@
 *.pyc
 __pycache__
-myvenv
+djangoblog
 db.sqlite3
 .DS_Store
+strona/migrations/

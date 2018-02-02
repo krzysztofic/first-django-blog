@@ -1,0 +1,13 @@
+{% load i18n %}
+{% load articletags %}
+{% load staticfiles %}
+
+    <section class="related-posts">
+        <h4>{% trans 'Poprzednie Posty' %}</h4>
+        <ul>
+            {% get_related_posts post as related_posts %}
+            {% for post in related_posts %}
+                <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>

@@ -1,0 +1,13 @@
+{% extends 'strona/post_list.html' %}
+{% load staticfiles %}
+
+{% block title %} {{ month|date:"F Y" }} {% endblock %}
+
+{% block content %}
+<ul>
+    {% for post in post_list %}
+        <li>{{ post.created_date|date:"F j, Y" }}: <a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

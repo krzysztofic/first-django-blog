@@ -1,10 +1,17 @@
 body
 {
 	/* Background pattern from subtlepatterns.com */
-	background-image: url("img/tlo.png");
+	background-image: url("img/tloo.png");
+	background-color: #F2F2F2;
 	margin: 0px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 13px;
+}
+
+@font-face
+{
+	font-family: 'deathnote';
+	src: url('/static/css/font/DEATH_FONT.TTF');
 }
 
 .container
@@ -16,7 +23,8 @@ body
 .header
 {
 	height: 60px;
-	background-color: #F5F5F5;
+	background-color: #F8F8F8;
+	/* background-image: url("img/tloo.png"); */
 	border: 1px solid #F1F1F1;
 	box-shadow: 2px 2px 2px #182019;
 }
@@ -24,19 +32,19 @@ body
 .sidebar-articles
 {
 	height: 550px;
-	background-color: #F6F6F6;
+	background-color: #F8F8F8;
+	/* background-image: url("img/tloo.png"); */
 	display: inline-block;
 	text-align: center;
 	border: 1px solid #F1F1F1;
 	overflow: auto;
 	box-shadow: 2px 2px 2px #182019;
-	font-family: 'deathnote';
 }
 
 .main
 {
 	height: 550px;
-	background-color: #F6F6F6;
+	background-color: #F8F8F8;
 	display: inline-block;
 	border: 1px solid #F1F1F1;
 	overflow: auto;
@@ -45,11 +53,25 @@ body
 
 .main_content
 {
-	background-color: #F6F6F6;
+	background-color: #F8F8F8;
 	margin-top: 10px;
 	overflow: auto;
 	border: none;
 	text-align: justify;
+}
+
+ul, a
+{
+	color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.link-next
+{
+	text-align: right;
 }
 
 /*
@@ -72,12 +94,6 @@ input[type=text]
 }
 */
 
-@font-face
-{
-	font-family: 'deathnote';
-	src: url('/static/css/font/DEATH_FONT.TTF');
-}
-
 .logo
 {
 	height: 60px;
@@ -87,16 +103,7 @@ input[type=text]
 	font-family: 'deathnote';
 }
 
-.media
-{
-	height: 60px;
-	float: left;
-}
 
-ul
-{
-	list-style-type: none;
-}
 
 .icon-mail
 {
@@ -174,16 +181,14 @@ ul
 {
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/black.png");
+	padding: 20px 20px;
 	color: white;
-	height: 150px;
 	border-top: 1px solid #F1F1F1;
 	border-bottom: 1px solid #F1F1F1;
 }
 
-.links
+.copyr
 {
-	height: 150px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	text-align: center;
+	text-align: right;
+
 }

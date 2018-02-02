@@ -39,8 +39,11 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'pagination',
+    'disqus',
 
     'strona',
+    'strona.templatetags',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -66,7 +69,10 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
                 'django.template.context_processors.request',
+                'django.template.context_processors.static',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
 
@@ -98,7 +104,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pl'
 
 TIME_ZONE = 'Europe/Warsaw'
 
