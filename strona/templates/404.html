@@ -1,0 +1,16 @@
+{% extends 'strona/base.html' %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Error 404 - page not found" %} | {% endblock title %}
+
+{% block content %}
+    <div class="col-md-12 mt-5 error-404">
+    <article>
+        <h4 class="error-title">Takiej strony jeszcze nie ma...</h4>
+        <figure>
+          <img src="{% static 'css/img/cat.png' %}" />
+        </figure>
+    </article>
+    </div>
+{% endblock %}

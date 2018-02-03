@@ -10,10 +10,11 @@
 	<div class = "main_content col-12">
 		<h4>{{ post.title }}</h4>
 		<p>Napisałem: {{ post.created_date }}</p>
-		<p>{{ category.name }}</p>
-		<p><b> {{ post.lead }}</b></p>
+  	<p><b> {{ post.lead }}</b></p>
 		<p> <a href="{{ post.get_absolute_url }}">Czytaj Dalej...</a></p>
 	</div>
+
+
 	{% endfor %}
 
 			<div class="pagination col-12">

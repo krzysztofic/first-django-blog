@@ -6,7 +6,9 @@
 {% block content %}
 <ul>
     {% for post in post_list %}
-        <li>{{ post.created_date|date:"F j, Y" }}: <a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+      <div class="archive_dates ml-3 mt-3">
+        <li>> {{ post.created_date|date:"F j, Y" }}: <a href="{{ post.get_absolute_url }}">{{ post.title }}</a> <</li>
+      </div>
     {% endfor %}
 </ul>
 

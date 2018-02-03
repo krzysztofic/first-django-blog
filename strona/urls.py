@@ -2,6 +2,7 @@ from django.conf.urls import url
 from . import views
 from .views import PostView, PostMonthArchiveView, PostDetailsView
 
+
 app_name = 'strona'
 
 urlpatterns = [

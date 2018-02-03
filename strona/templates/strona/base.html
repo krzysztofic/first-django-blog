@@ -22,7 +22,8 @@
 <!-- my own css -->
 <link rel="stylesheet" href="{% static 'css/style.css' %}" type='text/css'/>
 <link rel="stylesheet" href="{% static 'css/css/fontello.css' %}" type='text/css'/>
-<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!-- <link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 </head>
 
@@ -33,16 +34,14 @@
 		<div class="header col-12">
 			<div class="row">
 				<div class="media mt-2 ml-5 col-3">
-					<!-- <div class="row"> -->
-						<ul class="media">
+					<ul class="media">
 							<li class="email"><a href="mailto:mail@mail.pl"><i class="icon-mail"></i></a></li>
-							<li class="fb"><i class="icon-facebook"></i></li>
+					<!--<li class="fb"><i class="icon-facebook"></i></li>
 							<li class="yt"><i class="icon-youtube"></i></li>
-							<li class="li"><i class="icon-linkedin-squared"></i></li>
+							<li class="li"><i class="icon-linkedin-squared"></i></li> soon -->
 							<li class="tr"><a href="http://twitter.com/Vermityn"><i class="icon-twitter"></i></a></li>
 							<li class="gh"><a href="http://github.com/Vermintyn"><i class="icon-github-circled-alt2"></i></a></li>
 						</ul>
-					<!-- </div> -->
 				</div>
 
 				<div class="logo ml-5 col-7">
@@ -50,7 +49,7 @@
 					<h6>...czyli notatki przyszłego programisty</h6>
 				</div>
 
-			<!--Wyszukiwarka postów
+			<!--Wyszukiwarka postów  soon
 			<div class="szukaj col-3">
 				<form action="http://www.google.pl/search" method="get">
 					<input type="text" placeholder="Szukaj notki..." onfocus="this.placeholder=' ' " onblur="this.placeholder='Szukaj notki...' " name="q" />
@@ -63,7 +62,7 @@
 	</div>
 
 		<div class="row mt-3 ml-5">
-			<div class="sidebar-articles col-sm-3">
+			<div class="sidebar-articles col-3">
 				<section class="top-articles mt-2">
 							{% block sidebar-posts %}
 						     {% include "strona/related_posts.html" %}

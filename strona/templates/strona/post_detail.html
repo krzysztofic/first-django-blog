@@ -17,13 +17,13 @@
       <div class="col-sm-6 link-previous">
       {% if previous_post %}
         {% trans "Poprzedni post" %}<br>
-          <a href="{{ previous_post.get_absolute_url }}">{{ previous_post }}</a>
+          <b><a href="{{ previous_post.get_absolute_url }}">{{ previous_post }}</a></b>
       {% endif %}
       </div>
       <div class="col-sm-6 link-next">
       {% if next_post %}
         {% trans "Kolejny post" %}<br>
-          <a href="{{ next_post.get_absolute_url }}">{{ next_post }}</a>
+          <b><a href="{{ next_post.get_absolute_url }}">{{ next_post }}</a></b>
       {% endif %}
       </div>
   </div>

@@ -1,11 +1,13 @@
 body
 {
 	/* Background pattern from subtlepatterns.com */
-	background-image: url("img/tloo.png");
+	background-image: url("img/wood.png");
 	background-color: #F2F2F2;
 	margin: 0px;
-	font-family: 'Josefin Sans', sans-serif;
+	/* font-family: 'Josefin Sans', sans-serif; */
+	font-family: 'Raleway', sans-serif;
 	font-size: 13px;
+	overflow: hidden;
 }
 
 @font-face
@@ -23,8 +25,9 @@ body
 .header
 {
 	height: 60px;
-	background-color: #F8F8F8;
-	/* background-image: url("img/tloo.png"); */
+	background-color: #F6F6F6;
+	/* Background pattern from subtlepatterns.com */
+	/* background-image: url("img/linedpaper.png"); */
 	border: 1px solid #F1F1F1;
 	box-shadow: 2px 2px 2px #182019;
 }
@@ -32,8 +35,9 @@ body
 .sidebar-articles
 {
 	height: 550px;
-	background-color: #F8F8F8;
-	/* background-image: url("img/tloo.png"); */
+	/* background-color: #F8F8F8; */
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("img/linedpaper.png");
 	display: inline-block;
 	text-align: center;
 	border: 1px solid #F1F1F1;
@@ -41,10 +45,14 @@ body
 	box-shadow: 2px 2px 2px #182019;
 }
 
+
+
 .main
 {
 	height: 550px;
-	background-color: #F8F8F8;
+	/* background-color: #F8F8F8; */
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("img/linedpaper.png");
 	display: inline-block;
 	border: 1px solid #F1F1F1;
 	overflow: auto;
@@ -53,7 +61,7 @@ body
 
 .main_content
 {
-	background-color: #F8F8F8;
+	/* background-color: #F8F8F8; */
 	margin-top: 10px;
 	overflow: auto;
 	border: none;
@@ -72,6 +80,11 @@ ul, a
 .link-next
 {
 	text-align: right;
+}
+
+.error-404
+{
+	text-align: center;
 }
 
 /*

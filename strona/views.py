@@ -4,6 +4,8 @@ from .models import Post
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView, DetailView, MonthArchiveView
 
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 
 def post_list(request):
     # posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
