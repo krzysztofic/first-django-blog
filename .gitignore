@@ -3,4 +3,4 @@ __pycache__
 djangoblog
 db.sqlite3
 .DS_Store
-strona/migrations/
+*/migrations/

@@ -1,0 +1,16 @@
+{% extends 'strona/base.html' %}
+{% load staticfiles %}
+
+{% block title %} Skontaktuj się {% endblock %}
+
+{% block content %}
+<form method='post'>
+     {% csrf_token %}
+  <table>
+    {{ form.as_table }}
+  </table>
+
+  <button type="submit">Wyślij</button>
+
+</form>
+{% endblock %}
