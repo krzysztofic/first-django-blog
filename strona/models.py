@@ -6,6 +6,7 @@ from django.utils import timezone
 from model_utils import Choices
 from model_utils.models import StatusModel
 
+
 class PostQuerySet(QuerySet):
     def published(self):
         return self.filter(status='published')
