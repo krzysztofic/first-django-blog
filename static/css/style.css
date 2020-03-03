@@ -1,41 +1,33 @@
-body
-{
+body {
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/wood.png");
-	background-color: #F2F2F2;
 	margin: 0px;
-	/* font-family: 'Josefin Sans', sans-serif; */
 	font-family: 'Raleway', sans-serif;
 	font-size: 13px;
 	overflow: hidden;
 }
 
-@font-face
-{
+@font-face {
 	font-family: 'deathnote';
 	src: url('/static/css/font/DEATH_FONT.TTF');
 }
 
-.container
-{
+.container {
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
 
-.header
-{
+.header {
 	height: 60px;
-	background-color: #F6F6F6;
 	/* Background pattern from subtlepatterns.com */
-	/* background-image: url("img/linedpaper.png"); */
+	background-image: url("img/linedpaper.png");
 	border: 1px solid #F1F1F1;
 	box-shadow: 2px 2px 2px #182019;
 }
 
-.sidebar-articles
-{
+.sidebar-articles {
 	height: 550px;
-	/* background-color: #F8F8F8; */
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/linedpaper.png");
 	display: inline-block;
@@ -45,12 +37,8 @@ body
 	box-shadow: 2px 2px 2px #182019;
 }
 
-
-
-.main
-{
+.main {
 	height: 550px;
-	/* background-color: #F8F8F8; */
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/linedpaper.png");
 	display: inline-block;
@@ -59,8 +47,7 @@ body
 	box-shadow: 2px 2px 2px #182019;
 }
 
-.main_content
-{
+.main_content {
 	/* background-color: #F8F8F8; */
 	margin-top: 10px;
 	overflow: auto;
@@ -68,47 +55,27 @@ body
 	text-align: justify;
 }
 
-ul, a
-{
-	color: black;
+ul,
+a {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-
-.link-next
-{
+.link-next {
 	text-align: right;
 }
 
-.error-404
-{
+.error-404 {
 	text-align: center;
 }
 
-/*
-.szukaj
-{
+.szukaj {
 	height: 60px;
 	float: left;
-	margin-left: 30px;
 }
 
-input[type=text]
-{
-	margin-top: 10px;
-	margin-left: 20px;
-}
-
-.audio
-{
-	margin-top: 15px;
-}
-*/
-
-.logo
-{
+.logo {
 	height: 60px;
 	display: inline-block;
 	text-align: center;
@@ -116,92 +83,77 @@ input[type=text]
 	font-family: 'deathnote';
 }
 
-
-
-.icon-mail
-{
+.icon-mail {
 	cursor: pointer;
 	font-size: 30px;
 	color: #000;
 }
 
-.icon-mail:hover
-{
+.icon-mail:hover {
 	color: #808080;
 }
 
-.fb
-{
+.fb {
 	color: #4888b3;
 	cursor: pointer;
 	font-size: 30px;
 }
 
-.fb:hover
-{
+.fb:hover {
 	color: #396c8f;
 }
 
-.icon-twitter
-{
-	color:  #3095d3;
+.icon-twitter {
+	color: #3095d3;
 	cursor: pointer;
 	font-size: 30px;
 }
 
-.icon-twitter:hover
-{
+.icon-twitter:hover {
 	color: #2677a8;
 }
 
-.yt
-{
+.yt {
 	color: #d94348;
 	cursor: pointer;
 	font-size: 30px;
 }
 
-.yt:hover
-{
+.yt:hover {
 	color: #ad3539;
 }
 
-.li
-{
+.icon-linkedin-squared {
 	color: #4888b3;
 	cursor: pointer;
 	font-size: 30px;
 }
 
-.li:hover
-{
+.icon-linkedin-squared:hover {
 	color: #396c8f;
 }
 
-.icon-github-circled-alt2
-{
+.icon-github-circled-alt2 {
 	color: #000;
 	cursor: pointer;
 	font-size: 30px;
 }
 
-.icon-github-circled-alt2:hover
-{
+.icon-github-circled-alt2:hover {
 	color: #808080;
 }
 
-.footer
-{
+.footer {
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/black.png");
 	padding: 20px 20px;
 	color: white;
 	border-top: 1px solid #F1F1F1;
 	border-bottom: 1px solid #F1F1F1;
+	position: absolute;
+	bottom: 0;
 }
 
-.copyr
-{
+.copyr {
 	text-align: right;
-
 }
