@@ -7,25 +7,25 @@
 
 {% block content %}
 
-<div class = "main_content col-12">
+<div class="main_content col-12">
   <h3>{{ post.title }}</h3>
   <p>Napisałem: {{ post.created_date }}</p>
   <p><b> {{ post.lead }}</b></p>
   <p>{{ post.text|linebreaksbr }}</p>
 
   <div class="row links-next-prev">
-      <div class="col-sm-6 link-previous">
+    <div class="col-sm-6 link-previous">
       {% if previous_post %}
-        {% trans "Poprzedni post" %}<br>
-          <b><a href="{{ previous_post.get_absolute_url }}">{{ previous_post }}</a></b>
+      {% trans "Poprzedni post" %}<br>
+      <b><a href="{{ previous_post.get_absolute_url }}">{{ previous_post }}</a></b>
       {% endif %}
-      </div>
-      <div class="col-sm-6 link-next">
+    </div>
+    <div class="col-sm-6 link-next">
       {% if next_post %}
-        {% trans "Kolejny post" %}<br>
-          <b><a href="{{ next_post.get_absolute_url }}">{{ next_post }}</a></b>
+      {% trans "Kolejny post" %}<br>
+      <b><a href="{{ next_post.get_absolute_url }}">{{ next_post }}</a></b>
       {% endif %}
-      </div>
+    </div>
   </div>
 </div>
 

@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-	height: 60px;
+	height: 80px;
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/linedpaper.png");
 	border: 1px solid #F1F1F1;
@@ -60,6 +60,8 @@ a {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
+	color: black;
 }
 
 .link-next {
