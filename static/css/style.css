@@ -18,8 +18,7 @@ body {
 	position: relative;
 }
 
-.header {
-	height: 80px;
+.navbar {
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/linedpaper.png");
 	border: 1px solid #F1F1F1;
@@ -30,7 +29,6 @@ body {
 	height: 550px;
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/linedpaper.png");
-	display: inline-block;
 	text-align: center;
 	border: 1px solid #F1F1F1;
 	overflow: auto;
@@ -41,14 +39,12 @@ body {
 	height: 550px;
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/linedpaper.png");
-	display: inline-block;
 	border: 1px solid #F1F1F1;
 	overflow: auto;
 	box-shadow: 2px 2px 2px #182019;
 }
 
 .main_content {
-	/* background-color: #F8F8F8; */
 	margin-top: 10px;
 	overflow: auto;
 	border: none;
@@ -72,14 +68,7 @@ a {
 	text-align: center;
 }
 
-.szukaj {
-	height: 60px;
-	float: left;
-}
-
-.logo {
-	height: 60px;
-	display: inline-block;
+.navbar-brand {
 	text-align: center;
 	letter-spacing: 7px;
 	font-family: 'deathnote';
@@ -95,13 +84,13 @@ a {
 	color: #808080;
 }
 
-.fb {
+.icon-facebook {
 	color: #4888b3;
 	cursor: pointer;
 	font-size: 30px;
 }
 
-.fb:hover {
+.icon-facebook:hover {
 	color: #396c8f;
 }
 
@@ -115,13 +104,13 @@ a {
 	color: #2677a8;
 }
 
-.yt {
+.icon-youtube {
 	color: #d94348;
 	cursor: pointer;
 	font-size: 30px;
 }
 
-.yt:hover {
+.icon-youtube:hover {
 	color: #ad3539;
 }
 
